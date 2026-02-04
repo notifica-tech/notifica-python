@@ -36,7 +36,7 @@ client = Notifica("nk_live_...")
 # Com configurações adicionais
 client = Notifica(
     api_key="nk_live_...",
-    base_url="https://api.usenotifica.com.br/v1",
+    base_url="https://app.usenotifica.com.br/v1",
     timeout=30.0,
     max_retries=3,
 )
@@ -289,7 +289,7 @@ except NotificaError as e:
 | Opção | Descrição | Padrão |
 |-------|-----------|--------|
 | `api_key` | Sua API key (obrigatória) | - |
-| `base_url` | URL base da API | `https://api.usenotifica.com.br/v1` |
+| `base_url` | URL base da API | `https://app.usenotifica.com.br/v1` |
 | `timeout` | Timeout em segundos | `30.0` |
 | `max_retries` | Máximo de retries | `3` |
 | `auto_idempotency` | Gerar idempotency key automaticamente | `True` |

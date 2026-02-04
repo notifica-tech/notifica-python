@@ -11,7 +11,7 @@ import httpx
 
 from .errors import ApiError, NotificaError, RateLimitError, TimeoutError, ValidationError
 
-DEFAULT_BASE_URL = "https://api.usenotifica.com.br/v1"
+DEFAULT_BASE_URL = "https://app.usenotifica.com.br/v1"
 DEFAULT_TIMEOUT = 30.0
 DEFAULT_MAX_RETRIES = 3
 SDK_VERSION = "0.1.0"

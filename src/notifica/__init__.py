@@ -73,7 +73,7 @@ class Notifica:
 
     Args:
         api_key: API key (``nk_live_...``, ``nk_test_...``, etc.)
-        base_url: URL base da API (default: ``https://api.usenotifica.com.br/v1``)
+        base_url: URL base da API (default: ``https://app.usenotifica.com.br/v1``)
         timeout: Timeout padrão em segundos (default: 30.0)
         max_retries: Máximo de retries em 429/5xx (default: 3)
         auto_idempotency: Gerar idempotency key automaticamente para POSTs (default: True)
@@ -88,7 +88,7 @@ class Notifica:
         # Configuração completa
         client = Notifica(
             "nk_live_...",
-            base_url="https://api.usenotifica.com.br/v1",
+            base_url="https://app.usenotifica.com.br/v1",
             timeout=15.0,
             max_retries=5,
         )
@@ -117,7 +117,7 @@ class Notifica:
         self,
         api_key: str,
         *,
-        base_url: str = "https://api.usenotifica.com.br/v1",
+        base_url: str = "https://app.usenotifica.com.br/v1",
         timeout: float = 30.0,
         max_retries: int = 3,
         auto_idempotency: bool = True,
@@ -184,7 +184,7 @@ class AsyncNotifica:
         self,
         api_key: str,
         *,
-        base_url: str = "https://api.usenotifica.com.br/v1",
+        base_url: str = "https://app.usenotifica.com.br/v1",
         timeout: float = 30.0,
         max_retries: int = 3,
         auto_idempotency: bool = True,
