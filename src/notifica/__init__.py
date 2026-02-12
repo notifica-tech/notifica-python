@@ -27,6 +27,7 @@ from .client import AsyncNotificaClient, NotificaClient
 from .errors import ApiError, NotificaError, RateLimitError, TimeoutError, ValidationError
 from .resources.analytics import Analytics
 from .resources.api_keys import ApiKeys
+from .resources.audit import Audit
 from .resources.billing import Billing
 from .resources.channels import Channels
 from .resources.domains import Domains
@@ -65,6 +66,7 @@ __all__ = [
     "Billing",
     "InboxEmbed",
     "Inbox",
+    "Audit",
 ]
 
 
@@ -112,6 +114,7 @@ class Notifica:
     billing: Billing
     inbox_embed: InboxEmbed
     inbox: Inbox
+    audit: Audit  # ⚠️ Admin Only: Requires admin auth
 
     def __init__(
         self,
@@ -143,6 +146,7 @@ class Notifica:
         self.billing = Billing(self._client)
         self.inbox_embed = InboxEmbed(self._client)
         self.inbox = Inbox(self._client)
+        self.audit = Audit(self._client)
 
     def close(self) -> None:
         """Fecha o cliente HTTP."""

@@ -1,31 +1,33 @@
 """Recursos do SDK Notifica."""
 
-from .notifications import Notifications
-from .templates import Templates
-from .workflows import Workflows
-from .subscribers import Subscribers
+from .analytics import Analytics
+from .api_keys import ApiKeys
+from .audit import Audit
+from .billing import Billing
 from .channels import Channels
 from .domains import Domains
-from .webhooks import Webhooks
-from .api_keys import ApiKeys
-from .analytics import Analytics
-from .sms import Sms
-from .billing import Billing
-from .inbox_embed import InboxEmbed
 from .inbox import Inbox
+from .inbox_embed import InboxEmbed
+from .notifications import Notifications
+from .sms import Sms
+from .subscribers import Subscribers
+from .templates import Templates
+from .webhooks import Webhooks
+from .workflows import Workflows
 
 __all__ = [
-    "Notifications",
-    "Templates",
-    "Workflows",
-    "Subscribers",
+    "Analytics",
+    "ApiKeys",
+    "Audit",
+    "Billing",
     "Channels",
     "Domains",
-    "Webhooks",
-    "ApiKeys",
-    "Analytics",
-    "Sms",
-    "Billing",
-    "InboxEmbed",
     "Inbox",
+    "InboxEmbed",
+    "Notifications",
+    "Sms",
+    "Subscribers",
+    "Templates",
+    "Webhooks",
+    "Workflows",
 ]
